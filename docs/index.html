@@ -2,90 +2,114 @@
 <html>
   <head>
     <title>Link Bio</title>
-
     <style>
-      body{
+      body {
+        background: linear-gradient(rgb(208, 254, 238), rgb(182, 24, 217));
         padding-top: 40px;
         padding-bottom: 40px;
-      }
-    </style>
-    <style>
-      .banner-image {
-        width: 128px;
-        height: 128px;
-        object-fit: cover;
-        border-radius: 128px;
-
-      }
-
-      .thumbnail {
-        width: 48px;
-        height: 48px;
-        border-radius: 48px;
-        object-fit: cover;
-      }
-
-      body {
-        background-color: #fbdd74;
+        font-family: sans-serif;
+        color: white;
       }
       .name {
-        color: red;
-        font-size: 30px;
+        color: white;
+        font-size: 90px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+        text-shadow: 2px 2px rgb(182, 24, 217);
+        border: 5px solid white;
+        border-radius: 10px;
+        padding: 10px;
       }
-
+      .bio {
+        margin-bottom: 20px;
+        text-align: center;
+      }
       .social-icons a {
-        color: red;
+        color: white;
         text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
       }
       .link {
-        background-color: green;
+        background-color: white;
+        width: ;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.2s ease-in-out;
+      }
+      .link:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       }
       .link a {
-        color: aqua;
+        font: monospace;
+        color: rgb(182, 24, 217);
         text-decoration: none;
+        font-weight: bold;
+        margin-left: 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        max-width: 80%;
+        transition: all 0.2s ease-in-out;
+      }
+      .link:hover a {
+        color: white;
+        margin-left: 10px;
+      }
+      .mini-bio {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5px;
+        text-align: center;
+      }
+      .banner-image {
+        border: 5px solid white;
+        max-width: 50%;
+        border-radius: 40px;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
       }
     </style>
-
-  </head>
-
   <body>
+    <div class="bio">
+      <h1 class="name">Will Price</h1>
+      <h3>Software Developer | Sales Professional | Technologist </h3>
+    </div>
+
     <div class="banner">
-      <img src="./profile.jpeg" alt="Will Price Headshot" class="banner-image">
+      <img src="/docs/images/newprofile.JPG"  alt="Will Price Headshot" class ="banner-image" style="border: 5px solid white; border-radius: 10px;">
     </div>
-
-    <div class="name">
-      Will Price
-    </div>
-
-    <div class="social-icons">
+<div class="social-icons">
       <a href="https://github.com/dpiwill" target="_blank">
-        Github class
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="25" height="25">
+        <span class="mini-bio">Check out my projects on GitHub!</span>
       </a>
 
       <a href="https://www.linkedin.com/in/william-price-7b4444b0/" target="_blank">
-        LinkedIn
+        <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn" width="25" height="25">
+        <span class="mini-bio">Connect with me on LinkedIn!</span>
       </a>
   
     </div>
 
     <div class="link">
-      <img src="family.png" alt="" class="thumbnail">
-      <a href="https://www.youtube.com/watch?v=Cjz27F3aoQM">My Why</a>
+      <a href="https://drive.google.com/file/d/1FwkIxjApD8Vo9Ve8GPq7vJiDKALuBNCK/view?usp=sharing" target="_blank">RESUME</a>
+      <span class="mini-bio">Download my resume to learn more about my experience and skills!</span>
     </div>
 
+    
     <div class="link">
-      <img src="fanduel.png" alt="Fanduel Bonus" class="thumbnail">
-      <a href="https://fndl.co/gh82pnx">$50 Free Bet
-      </a>
+      <a href="https://www.youtube.com/watch?v=Cjz27F3aoQM">MOTIVATION</a>
+      <span class="mini-bio">Download my resume to learn more about my experience and skills!</span>
     </div>
-
-    <div class="link">
-      <img src="basketball.jpeg" class="thumbnail">
-      <a href="https://www.instagram.com/courtlegendsig/?igshid=ZDdkNTZiNTM%3D"> The Court Legend </a>
-    </div>
-
-
-
-    </div>
-  </body>
-</html>
